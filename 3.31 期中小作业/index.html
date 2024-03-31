@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>选择题小游戏</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    text-align: center;
+    background-image:url("background.png")
+  }
+  .question {
+    margin-bottom: 20px;
+  }
+  .options button {
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  #startBtn {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+
+<div id="coverPage">
+  <h2>欢迎来到我设计的选择题小游戏~~</h2>
+  <button id="startBtn">开始游戏</button>
+</div>
+
+<div id="questions" style="display: none;">
+</div>
+
+<script src="questions.js"></script>
+
+</body>
+</html>
