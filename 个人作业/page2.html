@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang='zh-CH' dir='ltr' class='ltr'.
+<head>
+  <meta charset=UTF-8'>
+  <meta name='viewport' content='width=device-width',initial-scale=1.0">
+  <title>请茶时间</title>
+  <link rel='stylesheet' href='styles_page2.css'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=ZCOOL+XiaoWei&display=swap" rel="stylesheet">
+</head>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+  <header>
+    <h1 class='logo'>请茶时间</h1>
+    <ul class="navbar-nav">
+    <nav class='nav'>
+    <li><a href='#section1'>了解我们</a></li>
+    <li><a href='#section2'>活动</a></li>
+    <li><a href='#section3'>联系我们</a></li>
+    </nav>
+</header>
+
+<div class="box">
+    <img src="文人.jpg" alt="文人图"  class="pic2"/>
+    <div class="box-text">
+    <div id='section1'>
+      <p style="text-align: center;">《请茶时间》<br /><br/>是由新联合美学文化发展有限公司打造的美好查生活应用平台<br /><br/>秉承“让美好茶生活触手可及”的理念<br /><br/>《请茶时间》依托强大的内容创作能力和资源整合能力，创造商业价值<br /><br/>
+      <p style="text-align: center;">Tea Time will become an application platform for better tea life.</p><br/><br/><br/><br/><br/><br/><br/>
+      <h1 style='text-align:center;'>我们做过的活动……</h1>
+   </div>
+</div>
+</div>
+
+<div id='section2'>
+    <div class="container">
+    <div class="panel active"
+        style="background-image: url('5.jpg')">
+        <h3>唐宫文创</h3>
+    </div>
+    <div class="panel"
+        style="background-image: url('1.png')">
+        <h3>第三十届广告节<br/>请茶时间会客厅</h3>
+    </div>
+    <div class="panel"
+        style="background-image: url('2.jpg')">
+        <h3>茶艺表演</h3>
+    </div>
+    <div class="panel"
+        style="background-image: url('3.jpg')">
+        <h3>参加第二十九届广告节</h3>
+    </div>
+    <div class="panel"
+        style="background-image: url('4.jpg')">
+        <h3>唐宫表演</h3>
+    </div>
+    </div>
+    </div>
+<div id='section3'>
+    <h1 style='text-align:center;'>联系我们</h1>
+    <img style="margin: 0 auto;"  src="contact.jpg" alt="contact" />
+
+</body>
+
+<script>
+    window.onload = function(){
+        const panels = document.querySelectorAll('.panel')
+            panels.forEach(panel => {
+                panel.addEventListener('click', () => {
+                    removeActiveClasses()
+                    panel.classList.add('active')
+                })
+            })
+
+        function removeActiveClasses() {
+            panels.forEach(panel => {
+                panel.classList.remove('active')
+            })
+        }
+    }
+
+</script>
+</html>
